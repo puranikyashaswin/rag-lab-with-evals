@@ -11,7 +11,7 @@ A compact lab to build and evaluate a Retrieval-Augmented Generation (RAG) syste
 
 ```mermaid path=null start=null
 flowchart TB
-    A[Raw doc: Attention Is All You Need (abstract)] --> B[Loader + Chunker]
+    A["Raw doc: Attention Is All You Need (abstract)"] --> B["Loader + Chunker"]
     B --> C[Embeddings: BAAI/bge-small-en-v1.5]
     C --> D[FAISS Vector Store]
     E[User Question] --> F[Retriever (k=4)]
